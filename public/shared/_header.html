@@ -1,0 +1,45 @@
+﻿<!--<div class="main-header">
+    <div class="logo" ui-sref="secure.dashboard" style="cursor:pointer;"><img src="images/logo.png" alt="timesheet The Boutique"></div>
+    <span class="menu-toggle" ng-click="vm.toggle()">
+        <i></i>
+        <i></i>
+        <i></i>
+    </span>
+    <div class="navbar">
+        <ul>
+            <li ng-click="vm.toggleActive()" ng-if="vm.user"><a ng-class="{'active' : $root.toState.highlight === 'home'}" ui-sref="secure.home">Home</a></li>
+            <li ng-if="vm.user"><a ng-class="{'active' : $root.toState.highlight === 'dashboard'}"  ui-sref="secure.dashboard">Dashboard</a></li>
+            <li ng-if="vm.user"><a ng-class="{'active' : $root.toState.highlight === 'customer'}"  ui-sref="secure.customer">Customers</a></li>
+            <li ng-if="vm.user"><a ng-class="{'active' : $root.toState.highlight === 'order'}"  ui-sref="secure.order">Orders</a></li>
+            <li ng-if="vm.user"><a ng-class="{'active' : $root.toState.highLightSetting === 'setting'}"  ui-sref="secure.setting.user">Settings</a></li>
+            <li ng-if="vm.user" title="logged in as {{vm.user.fullname}}"><a ng-click="vm.logout()" href="">Logout</a></li>
+            <li ng-if="!vm.user"><a ng-class="{'active' : $root.toState.highlight === 'home'}" ui-sref="home">Home</a></li>
+            <li ng-if="!vm.user"><a ng-class="{'active' : $root.toState.highlight === 'login'}" ui-sref="login">Login</a></li>
+        </ul>
+    </div>
+
+</div>
+-->
+<ul id="dropdown11" class="dropdown-content">
+    <li><a href="../Users/users.html">Users Listing</a></li>
+    <li><a href="../Add_User/add_user.html">Add Users</a></li>
+</ul>
+<nav class="teal" role="navigation">
+    <div class="nav-wrapper container">
+      <a id="logo-container" href="" class="brand-logo  white-text">NAME</a>
+      <ul class="right hide-on-med-and-down">
+        <li ><a ui-sref="secure.home">Home</a></li>
+        <li><a ui-sref="secure.addProject">Add Project</a></li>
+        <li><a class="dropdown-button" href="#!" data-activates="dropdown11">Manage Users<i class="material-icons right">arrow_drop_down</i></a></li>
+        <li><a ui-sref="login">Logout</a></li>
+      </ul>
+
+      <ul id="nav-mobile" class="side-nav">
+        <li ><a ui-sref="secure.home">Home</a></li>
+        <li><a ui-sref="secure.addProject">Add Project</a></li>
+        <li><a class="dropdown-button" href="#!" data-activates="dropdown11">Manage Users<i class="material-icons right">arrow_drop_down</i></a></li>
+        <li><a ui-sref="login">Logout</a></li>
+      </ul>
+      <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+    </div>
+  </nav>

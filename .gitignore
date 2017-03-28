@@ -1,0 +1,16 @@
+node_modules/
+bower_components/
+.sass-cache/
+.idea/
+.tmp/
+dist/
+*.gz
+*.tar
+*.zip
+*.rar
+*.vs
+*.njsproj
+typings/
+obj/
+uploads/
+public/lib/bootstrap

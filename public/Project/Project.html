@@ -1,0 +1,43 @@
+﻿  <div id="index-banner" class="parallax-container">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <br><br>
+            <div class="margin1">
+            
+                <div class="input-field">
+                    <input id="project" type="text" class="validate black-text">
+                    <label for="project">Project Name </label>
+                </div>
+            </div>
+            <div class="margin1">
+                <div class="input-field">
+                    <input id="description" type="text" class="validate black-text">
+                    <label for="description">Description</label>
+                </div>
+            </div>
+            <div class="row center">
+                <a href="" id="download-button" class="btn-flat waves-effect waves-light teal lighten-1">Add</a>
+            </div>
+
+            <table class="teal-text text-lighten-2 margin1 centered striped bordered responsive-table">
+        <thead>
+          <tr>
+              <th data-field="project">Project Name</th>
+              <th data-field="project">Description</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr class="black-text" ng-repeat="proj in vm.project">
+            <td> {{proj.project}}</td>
+             <td> {{proj.description}}</td>
+          </tr>
+        </tbody>
+      </table>
+        <div class="row center margin1">
+          <a href="../Add/add.html" id="download-button" class="btn-flat waves-effect waves-light teal lighten-1">Save</a>
+        </div>
+
+        </div>
+    </div>
+  </div>

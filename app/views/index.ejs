@@ -1,0 +1,59 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title >Time Sheet</title>
+
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="/lib/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link href="/lib/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="/lib/style2.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+
+</head>
+
+<body>
+    <div ui-view></div>
+
+    <script type="text/javascript">
+        window.user = <%- user || 'null'  %>;
+    </script>
+
+    <script type="text/javascript" src="/lib/jQuery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="/lib/lodash/lodash.js"></script>
+    <!-- <script type="text/javascript" src="/lib/sweetalert/lib/sweetalert.js"></script> -->
+    <script type="text/javascript" src="/lib/angular/angular.min.js"></script>
+    <script type="text/javascript" src="/lib/angular-ui-router/release/angular-ui-router.min.js"></script>
+    <script type="text/javascript" src="/lib/restangular/src/restangular.js"></script>
+    <script type="text/javascript" src="/lib/ngSweetAlert/SweetAlert.min.js"></script>
+    <script type="text/javascript" src="/lib/ng-file-upload/ng-file-upload-shim.min.js"></script>
+    <script type="text/javascript" src="/lib/ng-file-upload/ng-file-upload.min.js"></script>
+    <script type="text/javascript" src="/lib/angular-bootstrap/ui-bootstrap.min.js"></script>
+    <script type="text/javascript" src="/lib/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
+
+
+    <script src="/application.js"></script>
+    <script src="/route.js"></script>
+    <script src="/userService.js"></script>
+    <script src="/login/login.js"></script>
+    <script src="/shared/secure.js"></script>
+    <script src="/home/home.js"></script>
+    <script src="/Entry/Entry.js"></script>
+    <script src="/Project/Project.js"></script>
+    <script src="/User/user.js"></script>
+
+
+  <script src="/lib/materialize.js"></script>
+  <script src="/lib/materialize.min.js"></script>
+  <script src="/lib/init.js"></script>
+  <script src="/lib/pickadate.js"></script>
+
+</body>
+
+</html>

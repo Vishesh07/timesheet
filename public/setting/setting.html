@@ -1,0 +1,22 @@
+﻿<div class="inner-heading-bar">Manage Settings</div>
+
+<div class="main-contant-part">
+    <!-- Customer Details page Section Start Here -->
+    <div class="customer-detail-page-contant">
+        <div class="managecustomer-left-menu-inner-page">
+            <h4 class="admin-setting-heding">Settings</h4>
+            <ul>
+                <li><a ng-class="{'active' : $root.toState.highlight === 'user'}" ui-sref="secure.setting.user"><span>Manage Users</span></a></li>
+                <li><a ng-class="{'active' : $root.toState.highlight === 'orderstatus'}" ui-sref="secure.setting.orderstatus"><span>Manage Order Status</span></a></li>
+                <li><a ng-class="{'active' : $root.toState.highlight === 'measurement'}" ui-sref="secure.setting.measurement"><span>Manage Measurements</span></a></li>
+                <li><a ng-class="{'active' : $root.toState.highlight === 'design'}" ui-sref="secure.setting.design"><span>Manage Designs</span></a></li>
+                <li><a ng-class="{'active' : $root.toState.highlight === 'style'}" ui-sref="secure.setting.style"><span>Manage Styles</span></a></li>
+                <li><a ng-class="{'active' : $root.toState.highlight === 'material'}" ui-sref="secure.setting.material"><span>Manage Material Types</span></a></li>
+            </ul>
+        </div>
+
+       <ui-view></ui-view>
+
+    </div>
+    <!-- Customer Details page Section End Here -->
+</div>

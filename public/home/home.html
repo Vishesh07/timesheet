@@ -1,0 +1,86 @@
+﻿<div id="index-banner" class="parallax-container ">
+
+     <div class="section no-pad-bot">
+      <div class="container">
+         <div class="row center marginadd">
+          <a ui-sref="Entry"  class="btn-flat waves-effect waves-light teal lighten-1">Add Entries</a>
+
+        </div>
+        </div>
+    </div>
+        <div class="parallax"><img src="images/background1.jpg" alt="Unsplashed background img 1"></div>
+  </div>
+
+  <div id="index-banner" class="parallax-container">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <br><br>
+        <div class="margin1">
+          <label>Users</label>
+          <div class="input-field black-text">
+            <select class="browser-default" >
+            <option value="" disabled selected >Choose your option</option>
+            <option value="1" ng-repeat="users in Users">{{users.name}}</option>
+            </select>
+          </div>
+        </div>
+        <div class="margin1">
+          <label>Projects</label>
+          <div class="input-field black-text">
+            <select class="browser-default">
+            <option value="" disabled selected>Choose your option</option>
+            <option value="1" ng-repeat="Projectname in Projects">{{Projectname.name}}</option>
+
+            </select>
+          </div>
+        </div>
+        <div class="margin1 row">
+         <div class="col s6">
+          <label>Date Range:</label>
+          <label>From</label>
+          <input type="date" class="datepicker black-text">
+         </div>
+         <div class="col s6">
+          <label>Date Range:</label>
+          <label>To</label>
+          <input type="date" class="datepicker black-text">
+         </div>
+        </div>
+        <div class="margin1">
+          <div class="input-field">
+            <input id="search" type="text" class="validate black-text">
+            <label for="search">Search</label>
+          </div>
+        </div>
+
+
+
+      <table class="teal-text text-lighten-2 margin1 centered striped bordered responsive-table">
+        <thead>
+          <tr>
+              <th data-field="id">Name</th>
+              <th data-field="id">Task Id.</th>
+              <th data-field="date">Date</th>
+              <th data-field="project">Project</th>
+              <th data-field="description">Description</th>
+              <th data-field="hours">Hours</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr class="black-text" ng-repeat="Home in vm.home">
+            <td >{{Home.name}}</td>
+            <td >{{Home.taskid}}</td>
+            <td >{{Home.date}}</td>
+            <td >{{Home.project}}</td>
+            <td >{{Home.description}}</td>
+            <td >{{Home.hours}}</td>
+          </tr>
+
+        </tbody>
+      </table>
+
+        <br><br>
+        </div>
+      </div>
+    </div>
